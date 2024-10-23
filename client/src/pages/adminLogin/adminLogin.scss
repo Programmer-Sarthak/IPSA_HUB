@@ -1,0 +1,54 @@
+.adminLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Full viewport height for centering
+  background-color: #f7f7f7; // Light background for the whole login page
+  padding: 20px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 320px; // Adjusted form width for better layout
+    background-color: white; // White background for the form
+    padding: 40px 30px; // Padding inside the form for better spacing
+    border-radius: 8px; // Rounded corners for the form
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Slight shadow for depth
+
+    input {
+      margin-bottom: 15px; // Space between input fields
+      padding: 12px; // Padding inside the input fields
+      border: 1px solid #ddd; // Light border around inputs
+      border-radius: 5px; // Slightly rounded inputs
+      font-size: 16px; // Text size
+      transition: border-color 0.2s; // Smooth transition on focus
+
+      &:focus {
+        border-color: #007bff; // Border color on focus
+        outline: none; // Remove default focus outline
+      }
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff; // Button color
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s; // Smooth color transition
+
+      &:hover {
+        background-color: #0056b3; // Darker button color on hover
+      }
+    }
+
+    p {
+      color: #e74c3c; // Error message color
+      font-size: 14px; // Smaller text size for errors
+      margin-top: 10px; // Space above error message
+      text-align: center; // Center error message
+    }
+  }
+}

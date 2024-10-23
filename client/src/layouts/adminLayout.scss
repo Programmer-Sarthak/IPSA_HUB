@@ -1,0 +1,49 @@
+.admin-layout {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+
+  .admin-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    .admin-nav {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          margin: 0 15px;
+
+          // Style the logout button
+          button {
+            background-color: #ff4c4c; // Red background for logout
+            color: white; // White text
+            border: none; // No border
+            padding: 5px 10px; // Padding around the text
+            cursor: pointer; // Change cursor on hover
+            border-radius: 5px; // Rounded corners
+            transition: background-color 0.3s; // Smooth transition
+
+            &:hover {
+              background-color: #e63939; // Darker red on hover
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .admin-content {
+    margin-top: 20px;
+  }
+}

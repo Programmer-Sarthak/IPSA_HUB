@@ -1,0 +1,99 @@
+*{margin: 0;}
+
+.register {
+    height: 100vh;
+    background-color: rgb(8, 6, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: white;
+      border-radius: 10px;
+      min-height: 600px;
+      overflow: hidden;
+  
+      .left {
+        flex: 1;
+        background: linear-gradient(rgba(0,0,0, 0.5), rgba(13, 28, 98, 0.5)),
+          url("../../images/149690597814969046831444125521IPSNEW.jpg");
+        background-size: cover;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+  
+        h1 {
+          font-size: 100px;
+          line-height: 100px;
+        }
+        
+        p {
+        }
+  
+        span {
+          font-size: 14px;
+        }
+        
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: white;
+          color: rgb(27, 20, 160);
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+  
+      .right {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+  
+        h1 {
+        color: #000;
+        }
+        
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          
+          input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+          }
+          
+          button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-color: rgb(27, 20, 160);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+          }
+
+          select {
+            width: 75%;
+            padding: 5px;
+            border: none;
+            background-color: rgb(244, 244, 244);
+            color: rgb(90, 89, 89);
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  

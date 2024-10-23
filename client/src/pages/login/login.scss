@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+}
+
+.login {
+  height: 100vh;
+  background-color: rgb(8, 6, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(13, 28, 98, 0.5)),
+        url("../../images/IPSMainCampus.jpg");
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(27, 20, 160);
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      // Admin login button link styles
+      .admin-login-link {
+        position: absolute; // Positioning it absolutely within the right section
+        bottom: 20px; // Position it at the bottom
+        right: 20px; // Position it at the right
+      }
+
+      // Admin login button styles
+      .admin-login-button {
+        background-color: #ffffff; // Change to your desired color
+        color: rgb(0, 0, 0); // Button text color
+        border: none; // Remove border
+        padding: 5px 10px; // Smaller padding for a smaller button
+        border-radius: 5px; // Rounded corners
+        cursor: pointer; // Pointer on hover
+        transition: background-color 0.3s; // Smooth transition
+        font-size: 12px; // Smaller text
+        width: auto; // Adjust width to fit content
+
+        &:hover {
+          background-color: #ff0c0c;
+          color: rgb(255, 255, 255); // Change color on hover
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      position: relative; // Added to position the admin button correctly
+
+      h1 {
+        color: #000;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: rgb(27, 20, 160);
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        select {
+          width: 75%;
+          padding: 5px;
+          border: none;
+          background-color: rgb(244, 244, 244);
+          color: rgb(90, 89, 89);
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      
+    }
+  }
+}

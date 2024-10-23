@@ -1,0 +1,130 @@
+@import "../../style.scss";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; // Increase the gap between posts
+  min-height: 600px; // Ensure enough space even when there are few posts
+  margin: 0; // Reset margin for the posts container
+}
+
+.post {
+  @include themify($themes) {
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+    background-color: themed("bg");
+    color: themed("textColor");
+    margin: 0; // Remove bottom margin to reduce extra space
+
+    .container {
+      padding: 20px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative; // Important for absolute positioning of dropdown menu
+
+        .userInfo {
+          display: flex;
+          gap: 20px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              font-weight: 500;
+            }
+
+            .date {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .horizon {
+          display: flex;
+          align-items: center;
+
+          .menu {
+            position: absolute;
+            top: 100%; // Position below the icon
+            right: 0; // Align to the right
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            width: 100px; // Set a fixed width for the dropdown
+
+            button {
+              padding: 8px;
+              width: 100%;
+              border: none;
+              background: none;
+              text-align: left;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #f0f0f0; // Hover effect for buttons
+              }
+            }
+          }
+
+          .more-icon {
+            cursor: pointer; // Make icon clickable
+          }
+        }
+      }
+
+      .content {
+        margin: 20px 0;
+
+        p {
+          margin: 0; // Reset paragraph margin to reduce space
+        }
+
+        img {
+          width: 100%;
+          max-height: 500px;
+          object-fit: cover;
+          margin-top: 20px;
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          font-size: 14px;
+        }
+        svg {
+          transition: color 0.2s ease;
+        }
+      
+        .favoriteIcon {
+          &.liked {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
