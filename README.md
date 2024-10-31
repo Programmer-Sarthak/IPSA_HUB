@@ -4,8 +4,8 @@ Instructions:
 
 1) Firstly make schema name "ipsa_hub".
 2) Import any one folder named "With Data" or "Without Data" in MySQL.
-3) api Start: In VsCode or in any compiler in the terminal navigae to api folder use -> "cd" or "cd ../" and type "npm start".
-4) client Start: In VsCode or in any compiler in the terminal navigae to client folder use -> "cd" or "cd ../" and type "npm start".
+3) api Start: In VsCode or in any compiler in the terminal navigate to api folder use -> "cd" or "cd ../" and type "npm start".
+4) client Start: In VsCode or in any compiler in the terminal navigate to client folder use -> "cd" or "cd ../" and type "npm start".
 
 
 NOTE: 
